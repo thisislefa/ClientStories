@@ -1,0 +1,201 @@
+/* --- Reset & Base Styles --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter Tight', sans-serif;
+            background-color: #f1f1f1; /* Very light background to match image */
+            color: #1a1a1a;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* --- Main Layout Wrapper --- */
+        .cs-wrapper {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* --- Header Section --- */
+        .cs-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .cs-title {
+            font-size: 64px;
+            font-weight: 500; /* Inter Tight has a nice tight bold look at 500/600 */
+            letter-spacing: -1.5px; /* Tight tracking typical of this style */
+            margin-bottom: 16px;
+            color: #000;
+        }
+
+        .cs-subtitle {
+            font-size: 18px;
+            color: #555;
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- Content Container (Split Layout) --- */
+        .cs-content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr; /* Left column slightly smaller */
+            gap: 80px;
+            align-items: flex-start;
+        }
+
+        /* --- Left Side: Profile Card --- */
+        .cs-profile-card {
+            background-color: #fff;
+            padding: 24px 24px 32px 24px;
+            /* Subtle box shadow to match the clean aesthetic, barely visible in reference but likely there */
+            /* box-shadow: 0 4px 20px rgba(0,0,0,0.03); */ 
+        }
+
+        .cs-profile-image-container {
+            width: 100%;
+            aspect-ratio: 4/3; /* Standard landscape-ish portrait ratio */
+            overflow: hidden;
+            margin-bottom: 24px;
+            background-color: #eee;
+        }
+
+        .cs-profile-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: opacity 0.3s ease;
+        }
+
+        .cs-profile-info {
+            text-align: left;
+        }
+
+        .cs-profile-name {
+            font-size: 24px;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 4px;
+            letter-spacing: -0.5px;
+        }
+
+        .cs-profile-role {
+            font-size: 15px;
+            color: #666;
+            font-weight: 400;
+        }
+
+        /* --- Right Side: Testimonial Content --- */
+        .cs-testimonial-block {
+            padding-top: 10px; /* Slight alignment adjustment */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .cs-logo-container {
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #b0b0b0; /* Light gray logo color */
+            font-weight: 600;
+            font-size: 20px;
+        }
+        
+        .cs-logo-svg {
+            fill: #b0b0b0; /* Matches text */
+            height: 28px;
+        }
+
+        .cs-quote-text {
+            font-size: 38px;
+            line-height: 1.15;
+            font-weight: 500;
+            color: #000;
+            margin-bottom: 32px;
+            letter-spacing: -1px;
+            transition: opacity 0.3s ease;
+        }
+
+        .cs-description {
+            font-size: 17px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 48px;
+            max-width: 90%;
+            transition: opacity 0.3s ease;
+        }
+
+        /* --- Navigation Buttons --- */
+        .cs-nav-controls {
+            display: flex;
+            gap: 12px;
+        }
+
+        .cs-nav-btn {
+            width: 48px;
+            height: 48px;
+            border: none;
+            background-color: #d6d6d6;
+            color: #888;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .cs-nav-btn:hover {
+            background-color: #e0e0e0;
+            color: #000;
+        }
+
+        .cs-nav-btn:active {
+            transform: scale(0.95);
+        }
+
+        .cs-nav-btn svg {
+            width: 50px;
+            height: 50px;
+            stroke-width: 1;
+        }
+        
+        /* Utility class for JS transitions */
+        .fade-out {
+            opacity: 0;
+        }
+
+        /* --- Responsive Styles --- */
+        @media (max-width: 900px) {
+            .cs-content-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .cs-title {
+                font-size: 48px;
+            }
+
+            .cs-profile-card {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+            
+            .cs-quote-text {
+                font-size: 28px;
+            }
+        }

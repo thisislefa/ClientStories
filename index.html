@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Stories Component</title>
+    <!-- Import Inter Tight Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="cs-wrapper">
+        <!-- Header -->
+        <header class="cs-header">
+            <h1 class="cs-title">Client Stories</h1>
+            <p class="cs-subtitle">Real stories from businesses we've partnered with to create lasting success.</p>
+        </header>
+
+        <!-- Main Grid -->
+        <div class="cs-content-grid">
+            
+            <!-- Left Column: Image Card -->
+            <article class="cs-profile-card">
+                <div class="cs-profile-image-container">
+                    <!-- Placeholder image that matches the vibe/lighting of the original -->
+                    <img id="cs-image" src="https://images.pexels.com/photos/2080383/pexels-photo-2080383.jpeg" alt="Liam Foster" class="cs-profile-image">
+                </div>
+                <div class="cs-profile-info">
+                    <h3 id="cs-name" class="cs-profile-name">Liam Foster</h3>
+                    <p id="cs-role" class="cs-profile-role">Founder, Autodesk</p>
+                </div>
+            </article>
+
+            <!-- Right Column: Content -->
+            <div class="cs-testimonial-block">
+                <div>
+                    <!-- Logo Area -->
+                    <div id="cs-logo-container" class="cs-logo-container">
+                        <!-- Initial Logo (UrbanGlow) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="cs-logo-svg"><path fill="#000000" fill-rule="evenodd" d="M5 1a4 4 0 0 0-4 4v14a4 4 0 0 0 4 4h14a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4zm3.206 3.72l2.179 5.3l-2.158 4.556h-4.22q.03-.131.085-.256zm7.53 14.965l-4.101-9.911l-2.27-5.52h4.056l6.559 15.43zm-8.101-3.86H4.25l2.187 3.554a.77.77 0 0 0 1.095.232l6.231-3.784H7.634l.001-.001Z" clip-rule="evenodd"/></svg>
+                        <span id="cs-logo-text">Autodesk</span>
+                    </div>
+
+                    <!-- Quote -->
+                    <h2 id="cs-quote" class="cs-quote-text">
+                        “Working with Avexa felt like having an in-house team. The results spoke for themselves.”
+                    </h2>
+
+                    <!-- Description -->
+                    <p id="cs-desc" class="cs-description">
+                        Liam partnered with us for growth marketing and content consulting, focusing on scaling his business through targeted campaigns and refined messaging.
+                    </p>
+                </div>
+
+                <!-- Navigation -->
+                <div class="cs-nav-controls">
+                    <button id="cs-prev" class="cs-nav-btn" aria-label="Previous story">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    <button id="cs-next" class="cs-nav-btn" aria-label="Next story">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
