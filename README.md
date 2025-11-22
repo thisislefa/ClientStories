@@ -4,7 +4,7 @@ A sophisticated, interactive client testimonial component featuring smooth trans
 
 ## Live Demo
 
-[View Live Demo](https://thisislefa.github.io/clientstories)
+[View Live Demo](https://thisislefa.github.io/ClientStories)
 
 ## Features
 
@@ -135,5 +135,6 @@ const stories = [
 **Lefa Mofokeng**
 - GitHub: [@thisislefa](https://github.com/thisislefa)
 - Portfolio: [thisislefa.com](https://thisislefa.github.io/portfolio)
+
 
 
